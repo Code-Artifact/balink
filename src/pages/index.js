@@ -1,11 +1,16 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+// import Image from "next/image";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+export default function Home(props) {
+  const router = useRouter();
+  useEffect(() => {
+    setTimeout(() => {
+      router.push({ pathname: "/auth", query: { name: "/auth" } }, "/auth");
+    }, 2000);
+  }, []);
   return (
     <>
       <Head>
@@ -14,8 +19,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex items-center">
-        <h1> سلام </h1>
+      <main>
+        <div className="flex justify-center items-center w-screen h-screen bg-wh">
+          <Image
+            src={"/assets/images/logo-full.svg"}
+            width={"400"}
+            height={"150"}
+          />
+        </div>
       </main>
     </>
   );
