@@ -6,6 +6,7 @@ export default function FinishedSignUp() {
     <div className="bg-wh flex justify-center items-center h-screen">
       <div className="relative w-96  bg-white shadow-lg rounded-2xl flex flex-col justify-center items-center gap-3 h-3/6 border-2">
         <Image
+          alt= "vector"
           src="/assets/images/footage2.svg"
           width={400}
           height={400}

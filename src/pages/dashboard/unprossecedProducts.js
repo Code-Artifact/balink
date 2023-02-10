@@ -18,7 +18,7 @@ export default function UnprossecedProduct() {
       <HeadCard title={"پردازش نشده"} />
       <OrderList title={"لیست سفارشات این بخش"}>
         {Product.map((product) => (
-          <TicketReceipt type={product.type} index={product.index} />
+          <TicketReceipt key={product.key} type={product.type} index={product.index} />
         ))}
       </OrderList>
     </DashboardLayout>

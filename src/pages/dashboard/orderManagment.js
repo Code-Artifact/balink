@@ -20,7 +20,7 @@ export default function OrderManagment() {
       <ReportCard />
       <OrderList>
         {Product.map((product) => (
-          <TicketReceipt type={product.type} index={product.index} />
+          <TicketReceipt key={product.index} type={product.type} index={product.index} />
         ))}
       </OrderList>
     </DashboardLayout>

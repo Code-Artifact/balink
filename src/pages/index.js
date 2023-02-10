@@ -5,12 +5,14 @@ import { useRouter } from "next/router";
 // import Image from "next/image";
 
 export default function Home(props) {
+
   const router = useRouter();
   useEffect(() => {
+    
     setTimeout(() => {
       router.push({ pathname: "/auth", query: { name: "/auth" } }, "/auth");
     }, 2000);
-  }, []);
+  }, [router]);
   return (
     <>
       <Head>
@@ -22,6 +24,7 @@ export default function Home(props) {
       <main>
         <div className="flex justify-center items-center w-screen h-screen bg-wh">
           <Image
+            alt="logo"
             src={"/assets/images/logo-full.svg"}
             width={"400"}
             height={"150"}

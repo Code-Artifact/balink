@@ -1,7 +1,7 @@
 import AuthLayout from "components/authLayout";
 import { useRouter } from "next/router";
 
-export default function confirmSignUp() {
+export default function ConfirmSignUp() {
   const router = useRouter();
 
   const handleSubmit = () =>

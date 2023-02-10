@@ -15,6 +15,7 @@ export default function TicketOrder() {
         <div className="h-4/6 flex flex-col items-center p-2">
           <div className="relative">
             <Image
+              alt:"prodocts"
               src="/assets/images/footage3.svg"
               width={100}
               height={100}

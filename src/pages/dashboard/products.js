@@ -20,6 +20,7 @@ const orderInfoTab = (
       <div className="flex flex-col gap-2 items-center p-4">
         <div className="relative">
           <Image
+            alt="product-Image"
             src="/assets/images/product1.svg"
             width={130}
             height={130}
