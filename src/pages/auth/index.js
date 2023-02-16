@@ -16,7 +16,7 @@ export default function SignUpIn() {
         />
 
         <Link
-          href="../logo"
+          href="/auth/logIn"
           className="group relative flex w-full justify-center items-center rounded-md bg-pri py-3 px-4 text-base font-bold text-white hover:bg-pri-dark shadow-md"
         >
           ورود به حساب کاربری

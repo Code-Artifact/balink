@@ -1,10 +1,8 @@
 import AuthLayout from "components/authLayout";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
 
 export default function SignUp() {
   const router = useRouter();
-
   const handleSubmit = () =>
     router.push(
       { pathname: "/auth/authPhone", query: { name: "/auth" } },
