@@ -1,2 +1,2 @@
-**a tiny part of big project i do to show the client my skill**
+**a tiny part of a big project i do to show the client my skill**
 - nextjs
